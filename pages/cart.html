@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lady</title>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap Icon v 1.9.1 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- Start Loading -->
+  <div class="page-loader js-page-loader fade-out" >
+    <div></div>
+  </div>
+
+  <!-- End Loading -->
+
+  <!-- start offCanves -->
+  <div class="offcanvas offcanvas-end w-50 w-sm-25" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">اسم المتجر</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="navbar-nav me-auto mb-2 mb-lg-0 ps-5" id="navbarSupportedContent">
+        <a class="nav-link active pb-3" aria-current="page" href="#">الصفحة الرئيسية</a>
+        <a class="nav-link pb-3" href="#">تسوق الآن</a>
+        <a class="nav-link pb-3" href="#">وصل حديثاً</a>
+        <a class="nav-link pb-3" href="#">الأقسام</a>
+        <a class="nav-link" href="#">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+  <!-- End offCanves -->
+
+
+
+  <!-- start main (Hero & nav) -->
+
+  <main class="min-vh-100" id="main">
+
+    <nav class="navbar navbar-expand-lg   py-3" id="navbar-example2">
+      <div class="container">
+        <a class="navbar-brand" href="#">The <span>Lady</span> </a>
+        <button class="navbar-toggler order-last" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="bi bi-grid text-dark"></i>
+        </button>
+
+
+        <div class="collapse navbar-collapse nav  me-5" id="navbarSupportedContent">
+          <a class="nav-link active" aria-current="page" href="#main">الصفحة الرئيسية</a>
+          <a class="nav-link" href="#shopNow">تسوق الآن</a>
+          <a class="nav-link" href="#newProduct">وصل حديثاً</a>
+          <a class="nav-link" href="#scrollspyHeading3">الأقسام</a>
+          <a class="nav-link " href="#contactUs">تواصل معنا</a>
+        </div>
+
+        <div class=" nav end ms-lg-auto flex-grow-0 ms-2 ms-md-5" id="navbarSupportedContent">
+          <a class="nav-link  " href="#"><i class="fa-regular fa-magnifying-glass search"></i></a>
+          <a class="nav-link  " href="#"><i class="fa-regular fa-heart"></i></a>
+          <a class="nav-link " href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+        </div>
+
+
+      </div>
+
+    </nav>
+
+
+
+
+    <section class="h-100 h-custom" style="background-color: inherit;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-50">
+            <div class="col-12">
+              <div class=" card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">السلة</h1>
+                          <p class="btn btn-info fw-lighter mb-0 text-muted">العدد (3)</p>
+                        </div>
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-4 col-xl-3">
+                            <p class="text-muted fw-bold">بلوزة</p>
+                            <p class="text-black mb-0 fw-bold">بلوزة قطن</p>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2">
+                             <div> <!--  class="col-md-3 col-lg-3 col-xl-2 d-flex" -->
+                                <!-- <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                  <i class="fas fa-minus"></i>
+                                </button> -->
+          
+                                <input id="form1" min="0" name="quantity" value="1" type="number"
+                                  class="form-control form-control-sm" />
+          
+                                <!-- <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                  <i class="fas fa-plus"></i>
+                                </button> -->
+                              </div>
+                                
+
+
+                            <select class="text-muted form-select" aria-label="Default select example">
+                                <option selected>الحجم</option>
+                                <option value="1">test</option>
+                                <option value="2">test</option>
+                                <option value="3">test</option>
+                            </select>
+
+
+                            <select class="text-muted form-select" aria-label="Default select example">
+                                <option selected>اللون</option>
+                                <option value="1">test</option>
+                                <option value="2">test</option>
+                                <option value="3">test</option>
+                            </select>
+                          </div>
+
+
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <p class="mb-0 fa-solid fw-bold">$ 44.00</p>
+                          </div>
+                          
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-2">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                                class="img-fluid rounded-3" alt="Cotton T-shirt">
+                            </div>
+                            <div class="col-md-3 col-lg-4 col-xl-3">
+                              <p class="text-muted fw-bold">بلوزة</p>
+                              <p class="text-black mb-0 fw-bold">بلوزة قطن</p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2">
+                               <div> <!--  class="col-md-3 col-lg-3 col-xl-2 d-flex" -->
+                                  <!-- <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                  </button> -->
+            
+                                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                                    class="form-control form-control-sm" />
+            
+                                  <!-- <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                  </button> -->
+                                </div>
+                                  
+  
+  
+                              <select class="text-muted form-select" aria-label="Default select example">
+                                  <option selected>الحجم</option>
+                                  <option value="1">test</option>
+                                  <option value="2">test</option>
+                                  <option value="3">test</option>
+                              </select>
+  
+  
+                              <select class="text-muted form-select" aria-label="Default select example">
+                                  <option selected>اللون</option>
+                                  <option value="1">test</option>
+                                  <option value="2">test</option>
+                                  <option value="3">test</option>
+                              </select>
+                            </div>
+  
+  
+                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                              <p class="mb-0 fa-solid fw-bold">$ 44.00</p>
+                            </div>
+                            
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                            </div>
+                          </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-2">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                                class="img-fluid rounded-3" alt="Cotton T-shirt">
+                            </div>
+                            <div class="col-md-3 col-lg-4 col-xl-3">
+                              <p class="text-muted fw-bold">بلوزة</p>
+                              <p class="text-black mb-0 fw-bold">بلوزة قطن</p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2">
+                               <div> <!--  class="col-md-3 col-lg-3 col-xl-2 d-flex" -->
+                                  <!-- <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                  </button> -->
+            
+                                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                                    class="form-control form-control-sm" />
+            
+                                  <!-- <button class="btn btn-link px-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                  </button> -->
+                                </div>
+                                  
+  
+  
+                              <select class="text-muted form-select" aria-label="Default select example">
+                                  <option selected>الحجم</option>
+                                  <option value="1">test</option>
+                                  <option value="2">test</option>
+                                  <option value="3">test</option>
+                              </select>
+  
+  
+                              <select class="text-muted form-select" aria-label="Default select example">
+                                  <option selected>اللون</option>
+                                  <option value="1">test</option>
+                                  <option value="2">test</option>
+                                  <option value="3">test</option>
+                              </select>
+                            </div>
+  
+  
+                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                              <p class="mb-0 fa-solid fw-bold">$ 44.00</p>
+                            </div>
+                            
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                            </div>
+                          </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>العودة للتسوق</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h3 class="fw-bold mb-5 mt-2 pt-1">الملخص</h3>
+                        <hr class="my-4">
+      
+                        <div class=" d-flex justify-content-between mb-4">
+                          <p class="text-uppercase"><span class="text-muted">العدد:</span> 3</p>
+                          <p class="text-uppercase"><span class="text-muted">السعر:</span> $ 132.00</p>
+                          <!-- <h5 class="text-muted">$ 132.00</h5> -->
+                        </div>
+      
+                        <p class="text-uppercase mb-3 text-muted">المدينة: </p>
+      
+                        <div class="mb-4 pb-2">
+                            <select class="text-muted form-select" aria-label="Default select example">
+                                <option selected>test</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+      
+                        <p class="text-uppercase mb-3 text-muted">أدخل الكود:</p>
+      
+                        <div class="mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                            <label class="text-muted form-label" for="form3Examplea2">أدخل كود الخصم الخاص بك</label>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">مجموع الكلي:</h5>
+                          <h5 class="btn btn-info">$ 137.00</h5>
+                        </div>
+      
+                        <button type="button" class="btn btn-dark btn-block btn-lg"
+                          data-mdb-ripple-color="dark">اشتري الأن</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--Start Footer -->
+
+  <footer id="contactUs">
+    <div class="cont">
+      <section class="footup">
+        <div class="logo"><a href="#">The <span>Lady</span> </a></div>
+        <nav class="nav">
+          <a href=""> <i class="fa-brands fa-facebook"></i></a>
+          <a href=""> <i class="fa-brands fa-twitter"></i></a>
+          <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+          <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+      </section>
+      <section class="footdown">
+        <div class="containerr">
+          <div class="C contact">
+            <h6>تواصل معنا</h6>
+            <div class="A loc"><a href=""><i class="fa-solid fa-location-dot"></i>السعودية ، الرياض</a></div>
+            <div class="A phone"><a href=""><i class="fa-solid fa-phone-flip"></i> +556726537293</a></div>
+            <div class="A email"><a href=""><i class="fa-solid fa-envelope"></i> Footcap@help.com</a></div>
+          </div>
+          <div class="C my">
+            <h6>حساباتنا</h6>
+            <div class="M"><a href=""><i class="fa-light fa-angle-right"></i>حسابي</a></div>
+            <div class="M"><a href=""><i class="fa-light fa-angle-right"></i>عرض عربة التسوق</a></div>
+            <div class="M"><a href=""><i class="fa-light fa-angle-right"></i> قائمة الرغبات </a></div>
+            <div class="M"><a href=""><i class="fa-light fa-angle-right"></i> قارن </a></div>
+            <div class="M"><a href=""><i class="fa-light fa-angle-right"></i> وصل حديثاً </a></div>
+          </div>
+          <div class="C time">
+            <h6>أوقات فتح المتجر</h6>
+            <div class="T">الاثنين و الثلاثاء : 8AM - 10PM</div>
+            <div class="T">الاربعاء : 8AM - 7PM</div>
+            <div class="T">الجمعة
+              : 7AM - 12PM
+            </div>
+            <div class="T">السبت : 9AM
+              - 8PM</div>
+            <div class="T">الأحد
+              : مغلق</div>
+          </div>
+          <div class="C news">
+            <h6>النشرات الإخبارية</h6>
+            <div class="N">
+              <p>هذا النص يمكن أن يتكرر هذا النص يمكن ان يتكرر </p>
+            </div>
+            <div class="subscribe">
+              <div class="lab">
+                <form method="get">
+                  <label><input type="email" placeholder="عنوان الايميل" required></label>
+              </div>
+              <div class="link">
+                <button type="submit">الاشتراك</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="arrow"><a href=""><i class="fa-solid fa-arrow-down-long"></i></a></div>
+    </div>
+    <div class="foot">
+      <p> © 2022 <a href="">ستديو المتجر</a> كل الحقوق محفوظة : جمانة الكفارنة</p>
+    </div>
+
+
+  </footer>
+  <!--End Footer -->
+
+
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>
